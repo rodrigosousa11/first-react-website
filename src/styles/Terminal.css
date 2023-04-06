@@ -1,0 +1,30 @@
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#cursor {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.9em;
+    background-color: var(--text-color);
+    animation: blink 1s infinite;
+}
+
+#cursor.not-blinking {
+    animation: none;
+}
+
+#terminal {
+    line-height: 1.3em;
+    width: 770px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p {
+    margin: 0;
+}
+
