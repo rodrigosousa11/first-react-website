@@ -1,0 +1,33 @@
+button {
+    width: 120px;
+    height: 35px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin-top: 30px;
+}
+
+button:hover {
+    border-radius: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959, 0 15px 0 -4px #39a2db,
+        0 16px 10px -3px #39a2db;
+}
+
+button:active {
+    transition: all 0.2s ease-out;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959, 0 8px 0 -4px #39a2db,
+        0 12px 10px -3px #39a2db;
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        width: 100px;
+        height: 30px;
+    }
+}

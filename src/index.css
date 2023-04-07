@@ -1,34 +1,34 @@
 :root {
-  --bg-color: #131313;
-  --text-color: #ffffff;
+    --bg-color: #131313;
+    --text-color: #ffffff;
 }
 
 html {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: monospace;
-  font-size: 17px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: monospace;
+    font-size: 17px;
 }
 
 html.light {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+    --bg-color: #ffffff;
+    --text-color: #000000;
 }
 
 html {
-  padding: 12rem 5rem;
+    padding: 12rem 5rem;
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  html {
-      padding: 12rem 2.5rem;
-      font-size: 15px;
-  }
+    html {
+        padding: 12rem 2.5rem;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  html {
-      padding: 9rem 2rem;
-      font-size: 14px;
-  }
+    html {
+        padding: 9rem 2rem;
+        font-size: 14px;
+    }
 }
