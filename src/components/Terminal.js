@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Terminal.css";
-import DownloadButton from "./Cv";
+import "../styles/terminal.css";
 
 const Terminal = () => {
-  const cvUrl = "/cv.pdf";
   const lines = React.useMemo(() => [
     "Hi there! My name is Rodrigo Sousa and I'm from Porto, Portugal.",
     "I'm a Computer Engeneering student at Universidade Lusófona.",
@@ -17,7 +15,6 @@ const Terminal = () => {
 
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentLine, setCurrentLine] = useState("");
-  const [textFinished, setTextFinished] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,11 +27,9 @@ const Terminal = () => {
       if (currentLineIndex < lines.length - 1) {
         setCurrentLineIndex((prev) => prev + 1);
         setCurrentLine("");
-      } else {
-        setTextFinished(true);
       }
     }
-
+    
     return () => clearInterval(interval);
   }, [currentLine, currentLineIndex, lines]);
 
@@ -49,7 +44,7 @@ const Terminal = () => {
           id="cursor"
           className={currentLineIndex === lines.length - 1 ? "" : "not-blinking"}
         ></span>
-      </p><span>{textFinished && <DownloadButton cvUrl={cvUrl} />}</span>
+      </p>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/index.css";
-import "../styles/Header.css";
+import "../styles/header.css";
 import moon from "../assets/moon.png";
 import sun from "../assets/sun.png";
 
