@@ -4,7 +4,7 @@ import DownloadButton from "./Cv";
 
 const Terminal = () => {
   const cvUrl = "/cv.pdf";
-  const lines = [
+  const lines = React.useMemo(() => [
     "Hi there! My name is Rodrigo Sousa and I'm from Porto, Portugal.",
     "I'm a Computer Engeneering student at Universidade Lusófona.",
     "I love learning new things, especially about new ways of coding.",
@@ -13,7 +13,7 @@ const Terminal = () => {
     "Feel free to contact me and thanks for stopping by :)",
     "\u00A0",
     "$ ",
-  ];
+  ], []);
 
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentLine, setCurrentLine] = useState("");
