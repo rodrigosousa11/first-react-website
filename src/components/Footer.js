@@ -13,8 +13,7 @@ function Footer() {
                     <a href="mailto:rodrigosousa1105@gmail.com">
                         <FaEnvelope className="social-icon" />
                     </a>
-                    <a
-                        href="https://www.linkedin.com/in/rodrigo-sousa-bb8a69262" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/rodrigo-sousa-bb8a69262" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="social-icon" />
                     </a>
                 </div>
