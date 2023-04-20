@@ -8,11 +8,11 @@ header {
 
 .toggle-icon {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     transition: transform 0.35s ease-in-out;
     float: right;
-    margin: 60px 70px 20px 20px;
+    margin: 37px 50px 20px 20px;
 }
 
 .toggle-icon.rotate {
@@ -26,5 +26,14 @@ header {
 .logo {
     width: 120px;
     height: 120px;
-    margin: 20px 0px 0px 70px;
+    margin: 0px 0px 0px 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        margin: 0px 0px 0px 40px;
+    }
+    .toggle-icon {
+        margin: 36px 40px 20px 20px;
+    }
 }
