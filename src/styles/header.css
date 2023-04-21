@@ -12,7 +12,7 @@ header {
     height: 42px;
     transition: transform 0.35s ease-in-out;
     float: right;
-    margin: 37px 50px 20px 20px;
+    margin: 38px 50px 20px 20px;
 }
 
 .toggle-icon.rotate {
@@ -34,6 +34,6 @@ header {
         margin: 0px 0px 0px 40px;
     }
     .toggle-icon {
-        margin: 36px 40px 20px 20px;
+        margin: 37px 40px 20px 20px;
     }
 }
