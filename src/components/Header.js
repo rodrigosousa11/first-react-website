@@ -3,8 +3,8 @@ import "../styles/index.css";
 import "../styles/header.css";
 import moon from "../assets/moon.png";
 import sun from "../assets/sun.png";
-import logo from "../assets/logopreto.png";
-import whitelogo from "../assets/logobranco.png";
+import logo from "../assets/logopreto.svg";
+import whitelogo from "../assets/logobranco.svg";
 
 const Header = () => {
     const [isLightTheme, setIsLightTheme] = useState(true);
@@ -33,19 +33,15 @@ const Header = () => {
 
     return (
         <header>
-            {imagesLoaded ? (
+            {imagesLoaded && (
                 <img src={isLightTheme ? whitelogo : logo} alt="Logo" className="logo" />
-            ) : null}
-            {imagesLoaded ? (
-                <img
-                    src={isLightTheme ? sun : moon}
-                    alt="Toggle Theme"
-                    className="toggle-icon"
-                    onClick={toggleTheme}
-                />
-            ) : null}
+            )}
+            {imagesLoaded && (
+                <img src={isLightTheme ? sun : moon} alt="Toggle Theme" className="toggle-icon" onClick={toggleTheme} />
+            )}
         </header>
     );
+    
 };
 
 export default Header;
