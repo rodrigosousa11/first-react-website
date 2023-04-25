@@ -9,7 +9,7 @@
     width: 0.6em;
     height: 0.9em;
     background-color: var(--text-color);
-    animation: blink 1s infinite;
+    animation: blink 1.5s infinite;
 }
 
 #cursor.not-blinking {
