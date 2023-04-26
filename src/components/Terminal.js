@@ -10,7 +10,7 @@ const Terminal = ({ lines }) => {
         const interval = setInterval(() => {
             setCurrentLine((prev) => prev + lines[currentLineIndex][prev.length]);
             setWriting(true);
-        }, 8);
+        }, 11);
 
         if (currentLine.length === lines[currentLineIndex].length) {
             clearInterval(interval);
